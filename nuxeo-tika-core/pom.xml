@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.nuxeo.contentanalysis</groupId>
+    <artifactId>nuxeo-tika-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>nuxeo-tika-core</artifactId>
+  <name>Nuxeo tika core</name>
+  <description>Add-on to extract content and metadata from various types of documents, such as Word, Excel, and PDF or even multimedia files like J</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.nuxeo.ecm.automation</groupId>
+      <artifactId>nuxeo-automation-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.automation</groupId>
+      <artifactId>nuxeo-automation-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
+	<dependency>
+	    <groupId>org.apache.tika</groupId>
+	    <artifactId>tika-core</artifactId>
+	    <version>1.18</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.tika/tika-parsers -->
+	<dependency>
+	    <groupId>org.apache.tika</groupId>
+	    <artifactId>tika-parsers</artifactId>
+	    <version>1.18</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.tika/tika-serialization -->
+	<dependency>
+	    <groupId>org.apache.tika</groupId>
+	    <artifactId>tika-serialization</artifactId>
+	    <version>1.18</version>
+	</dependency>	    
+  </dependencies>
+</project>
